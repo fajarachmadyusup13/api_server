@@ -46,7 +46,6 @@ func handleNewEndpoint(w http.ResponseWriter, r *http.Request) {
 
 func writeResponse(w http.ResponseWriter, str string) {
 	response := []byte(str)
-	fmt.Println(response)
 	_, err := w.Write(response)
 	if err != nil {
 		fmt.Println(err)
